@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NavigationDrawer</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="harun_bekcan">Harun Bekcan</string>
+    <string name="android_dev_gmail_com">androiddev@gmail.com</string>
 </resources>
