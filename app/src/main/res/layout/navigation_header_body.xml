@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cameraImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/camera"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="@+id/cameraImageView"
+            app:layout_constraintStart_toEndOf="@+id/cameraImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/cameraImageView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/galleryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cameraContainer">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/galleryImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_gallery"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/galleryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/gallery"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="@+id/galleryImageView"
+            app:layout_constraintStart_toEndOf="@+id/galleryImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/galleryImageView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shareContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/galleryContainer">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/shareImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/shareTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/share"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="@+id/shareImageView"
+            app:layout_constraintStart_toEndOf="@+id/shareImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/shareImageView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slideShowContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/shareContainer">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slideShowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_slideshow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/slideShowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/slideshow"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="@+id/slideShowImageView"
+            app:layout_constraintStart_toEndOf="@+id/slideShowImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/slideShowImageView" />
+
+    </LinearLayout>
+
+</LinearLayout>
