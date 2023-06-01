@@ -15,19 +15,14 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     private lateinit var navigationHeaderBinding: NavigationHeaderBinding
 
     override fun prepareView(savedInstanceState: Bundle?) {
-        navigationHeaderBinding =
-            NavigationHeaderBinding.bind(binding.navigationView.getHeaderView(0))
+        navigationHeaderBinding = NavigationHeaderBinding.bind(binding.navigationView.getHeaderView(0))
         setDrawerToggle()
         navHeaderLayoutMenuItemClicked()
     }
 
     private fun setDrawerToggle() {
         binding.apply {
-            actionDrawerToggle = ActionBarDrawerToggle(
-                this@MainActivity, drawerLayout,
-                R.string.open,
-                R.string.close
-            )
+            actionDrawerToggle = ActionBarDrawerToggle(this@MainActivity, drawerLayout, R.string.open, R.string.close)
             drawerLayout.addDrawerListener(actionDrawerToggle)
             actionDrawerToggle.syncState()
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
